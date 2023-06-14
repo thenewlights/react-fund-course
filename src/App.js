@@ -8,7 +8,6 @@ import MyButton from "./components/UI/button/MyButton";
 import { usePosts } from "./hooks/usePosts";
 
 function App() {
-  console.log('app.js has updated')
   const [posts, setPosts] = useState([])
   const removePost = (post) => {
     setPosts(posts.filter(p => p.id !== post.id))

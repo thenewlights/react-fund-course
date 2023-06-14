@@ -6,7 +6,8 @@ export const useSortedPosts = (posts, sort) => {
         if (sort) {
             return [...posts].sort((a, b) => a[sort].localeCompare(b[sort]))
         }
-        return posts
+        return posts;
+
     }, [sort, posts])
 
     return sortedPosts;
