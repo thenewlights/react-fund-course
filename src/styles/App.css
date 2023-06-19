@@ -6,11 +6,13 @@
 
 #root {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .App {
     width: 800px;
+    margin: auto;
 }
 
 .post {
@@ -21,6 +23,15 @@
     justify-content: space-between;
     align-items: center;
 }
+.post__id__page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.post__btns {
+  display: flex;
+}
+
 .post-enter {
   transform: translateX(-350px);
 }
@@ -49,4 +60,17 @@
 .page__current {
   border: 2px solid orange;
   font-weight: bold;
+}
+
+.navbar {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background: lightgray;
+}
+
+.navbar__links {
+  margin-left: auto;
 }

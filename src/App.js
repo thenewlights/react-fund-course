@@ -1,14 +1,13 @@
-import { BrowserRouter, Route } from "react-router-dom";
-import About from './pages/About';
+import Navbar from "./components/UI/Navbar/Navbar";
+import AppRouter from "./components/AppRouter";
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Route path="/about/">
-        <About />
-      </Route>
-    </BrowserRouter>
+    <div>
+      <Navbar />
+      <AppRouter />
+    </div>
   );
 }
 
