@@ -1,6 +1,6 @@
 import About from "../pages/About"
 import Login from "../pages/Login"
-import Posts from "../pages/Pages"
+import Posts from "../pages/Posts"
 import PostIdPage from "../pages/PostIdPage"
 
 export const privateRoutes = [
